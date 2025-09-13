@@ -2,7 +2,7 @@
 using namespace std;
 
 // Function to find all indices of a given element in an array
-int findAllIndices(int arr[], int n, int key, int indices[]) {
+int findIndices(int arr[], int n, int key, int indices[]) {
     int count = 0;
     for (int i = 0; i < n; i++) {
         if (arr[i] == key) {
@@ -32,7 +32,7 @@ int main() {
     cin >> key;
 
     int indices[100];
-    int count = findAllIndices(arr, n, key, indices);
+    int count = findIndices(arr, n, key, indices);
 
     if (count == 0) {
         cout << "Key not found!" << endl;
